@@ -102,7 +102,7 @@ paru -S fontpreview # better font previewer
 
 ---
 
-##### How to change brightness
+### Change brightness
 ```sh
 man brightnessctl
 ```
