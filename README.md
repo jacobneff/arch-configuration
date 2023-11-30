@@ -16,7 +16,7 @@ paru # adds -Syu plags and updates the system
 
 ### Install Initial Packages:
 ```sh
-paru -S zsh zip unzip z tldr tar ranger python neovim neofetch mpv man-db make lolcat ipv gcc fzf dunst cgra cmatrix curl bluez-utils bluez blueman bat alacritty 1password
+paru -S zsh zip unzip z tldr tar ranger ripgrep python neovim neofetch mpv man-db make lolcat ipv gcc fzf dunst cmatrix curl bluez-utils bluez blueman bat alacritty 1password
 ```
 
 ---
