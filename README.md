@@ -18,7 +18,7 @@ paru # adds -Syu plags and updates the system
 
 #### Install Packages:
 ```sh
-paru -S 1password alacritty bat blueman bluez bluez-utils curl cmatrix dunst fzf gcc ipv lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger tldr tar unzip z zsh zip
+paru -S 1password alacritty bat blueman bluez bluez-utils curl cmake cmatrix dunst fzf gcc ipv lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger tldr tar unzip z zsh zip
 ```
 
 ---
