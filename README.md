@@ -95,6 +95,13 @@ paru -S fontpreview # better font previewer
 
 ---
 
+### Logitech Mousee Configuration
+
+* `logid` (onfiguration with a file)
+* `solaar` (configuration with a gui)
+
+---
+
 ##### How to change brightness
 ```sh
 man brightnessctl
