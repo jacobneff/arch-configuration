@@ -30,13 +30,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 * [oh-my-zsh](https://ohmyz.sh/)
 ---
 
-#### Installing nvim Config
+### Installing nvim Config
 * [kickstart github](https://github.com/nvim-lua/kickstart.nvim)
 * [my kickstart fork](https://github.com/jacobneff/nvim) (clone this)
 ```sh
 git clone https://github.com/jacobneff/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
-
+  
 ---
 
 ### Install Fonts
