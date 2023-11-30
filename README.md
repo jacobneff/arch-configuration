@@ -18,7 +18,7 @@ paru # adds -Syu plags and updates the system
 
 #### Install Packages:
 ```sh
-paru -S 1password alacritty bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv libinput logiops lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger solaar tldr tar unzip usbutils z zsh zip
+paru -S 1password alacritty azote bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv libinput logiops lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger solaar tldr tar unzip usbutils z zsh zip
 ```
 
 ---
