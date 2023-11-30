@@ -109,9 +109,9 @@ paru -S sddm-theme-tokyo-night
 ```
 
 ##### Edit the sddm config file
-```sh
-sudo nvim /etc/sddm.conf  # use any text editor with raised privileges
-```
+
+* `sudo nvim /etc/sddm.conf`
+
 ```
 [Theme]
 Current=tokyo-night-sddm
