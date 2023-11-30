@@ -49,7 +49,7 @@ paru -S nerd-fonts # nerd fonts 40 for JetBrainsMono Nerd Font
 sudo nvim /etc/fonts/local.conf
 ```  
 
-Font Previewer  
+##### Font Previewer  
 ```sh
 # Add dependencies: sxiv, imagemagick, xdotool, fzf
 paru -S sxiv imagemagick xdotool
