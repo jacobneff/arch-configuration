@@ -31,7 +31,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ---
 
-### Installing nvim Config
+### Configuring Neovim
+
+#### Install Neovim Nightly Release
+
+```sh
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+chmod u+x nvim.appimage && ./nvim.appimage
+```
+
+#### Neovim Config
 * [kickstart github](https://github.com/nvim-lua/kickstart.nvim)
 * [my kickstart fork](https://github.com/jacobneff/nvim) (clone this)
 ```sh
