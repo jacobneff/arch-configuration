@@ -121,6 +121,13 @@ Current=tokyo-night-sddm
 
 ---
 
+### Background Config
+
+* using `azote` and running it inside sway wm: `exec ~/.azotebg`
+* ru `azote` in terminal to pick the wallpaper
+
+---
+
 ### Change brightness
 ```sh
 man brightnessctl
