@@ -16,7 +16,7 @@ paru # adds -Syu plags and updates the system
 
 #### Install Packages:
 ```sh
-paru -S zsh zip unzip z tldr tar ranger ripgrep python neofetch microsoft-edge-stable mpv man make lolcat ipv gcc fzf dunst cmatrix curl bluez-utils bluez blueman bat alacritty 1password
+paru -S 1password alacritty bat blueman bluez bluez-utils curl cmatrix dunst fzf gcc ipv lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger tldr tar unzip z zsh zip
 ```
 
 #### Installing nvim Config
