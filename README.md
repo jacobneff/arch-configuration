@@ -19,6 +19,15 @@ paru # adds -Syu plags and updates the system
 paru -S 1password alacritty bat blueman bluez bluez-utils curl cmatrix dunst fzf gcc ipv lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger tldr tar unzip z zsh zip
 ```
 
+---
+
+### Configure oh-my-zsh
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+* [oh-my-zsh](https://ohmyz.sh/)
+---
+
 #### Installing nvim Config
 * [kickstart github](https://github.com/nvim-lua/kickstart.nvim)
 * [my kickstart fork](https://github.com/jacobneff/nvim) (clone this)
