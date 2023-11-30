@@ -14,7 +14,7 @@ makepkg -si # builds and installs paru
 paru # adds -Syu plags and updates the system
 ```
 
-#### Install Initial Packages:
+#### Install Packages:
 ```sh
 paru -S zsh zip unzip z tldr tar ranger ripgrep python neofetch microsoft-edge-stable mpv man make lolcat ipv gcc fzf dunst cmatrix curl bluez-utils bluez blueman bat alacritty 1password
 ```
