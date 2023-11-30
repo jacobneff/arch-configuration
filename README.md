@@ -44,7 +44,8 @@ sudo nvim /etc/fonts/local.conf
 
 Font Previewer  
 ```sh
-paru -S imagemagick # font previewer
+# Add dependencies: sxiv, imagemagick, xdotool, fzf
+paru -S sxiv imagemagick xdotool
 paru -S fontpreview # better font previewer
 ```
 * [fontpreview github](https://github.com/sdushantha/fontpreview)
