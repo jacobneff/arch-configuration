@@ -38,7 +38,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```sh
 wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage && ./nvim.appimage
-sudo mv nvim.appimage /usr/bin/ 
+mv nvim.appimage nvim && sudo mv nvim.appimage /usr/bin/
 ```
 
 If system does not have FUSE
