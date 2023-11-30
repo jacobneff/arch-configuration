@@ -38,13 +38,13 @@ fc-list : family style | grep "<font-name>" # list fonts family and style
 fc-list : file | grep "<font-name>" # list fonts file path
 ```
 
-###### Installing Special Fonts
+##### Installing Special Fonts
 ```sh
 paru -S noto-fonts # google fonts
 paru -S nerd-fonts # nerd fonts 40 for JetBrainsMono Nerd Font
 ```
 
-###### Changing Default Font
+##### Changing Default Font
 ```sh
 sudo nvim /etc/fonts/local.conf
 ```  
