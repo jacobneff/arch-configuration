@@ -140,12 +140,15 @@ WantedBy=multi-user.target
 ##### Enable Service
 * `sudo systemctl enable powertop.service`
 
+##### Calibrate Powertop
+* `sudo powertop --calibrate`
+
 ---
 
 ### Wallpaper Config
 
 * using `azote` and running it inside sway wm: `exec ~/.azotebg`
-* ru `azote` in terminal to pick the wallpaper
+* run `azote` in terminal to pick the wallpaper
 
 ---
 
