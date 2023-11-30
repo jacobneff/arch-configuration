@@ -41,7 +41,7 @@ chmod u+x nvim.appimage && ./nvim.appimage
 mv nvim.appimage nvim && sudo mv nvim /usr/bin/
 ```
 
-If system does not have FUSE
+##### If system does not have FUSE
 ```sh
 ./nvim.appimage --appimage-extract
 ./squashfs-root/usr/bin/nvim
