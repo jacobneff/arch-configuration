@@ -14,9 +14,16 @@ makepkg -si # builds and installs paru
 paru # adds -Syu plags and updates the system
 ```
 
-### Install Initial Packages:
+#### Install Initial Packages:
 ```sh
-paru -S zsh zip unzip z tldr tar ranger ripgrep python neovim neofetch mpv man-db make lolcat ipv gcc fzf dunst cmatrix curl bluez-utils bluez blueman bat alacritty 1password
+paru -S zsh zip unzip z tldr tar ranger ripgrep python neofetch microsoft-edge-stable mpv man make lolcat ipv gcc fzf dunst cmatrix curl bluez-utils bluez blueman bat alacritty 1password
+```
+
+#### Installing nvim Config
+* [kickstart github](https://github.com/nvim-lua/kickstart.nvim)
+* [my kickstart fork](https://github.com/jacobneff/nvim) (clone this)
+```sh
+git clone https://github.com/jacobneff/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 ---
