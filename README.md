@@ -102,6 +102,16 @@ paru -S fontpreview # better font previewer
 
 ---
 
+### sddm Theme
+
+```sh
+paru -S sddm-theme-tokyo-night
+```
+
+* [theme repo](https://github.com/rototrash/tokyo-night-sddm)
+
+---
+
 ### Change brightness
 ```sh
 man brightnessctl
