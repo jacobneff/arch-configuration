@@ -28,6 +28,7 @@ paru -S 1password alacritty bat blueman bluez bluez-utils curl cmatrix dunst fzf
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 * [oh-my-zsh](https://ohmyz.sh/)
+
 ---
 
 ### Installing nvim Config
@@ -36,7 +37,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```sh
 git clone https://github.com/jacobneff/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
-  
+
 ---
 
 ### Install Fonts
