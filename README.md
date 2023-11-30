@@ -5,6 +5,8 @@
 **Terminal**: Alacritty  
 **Terminal Font**: JetBrainsMonoNerdFont  
 
+---
+
 ### Installing paru
 ```sh
 sudo pacman -S --needed base-devel git # includes tools for building
@@ -14,9 +16,42 @@ makepkg -si # builds and installs paru
 paru # adds -Syu plags and updates the system
 ```
 
-### Install Initial Packages:
+#### Install Packages:
 ```sh
-paru -S zsh zip unzip z tldr tar ranger python neovim neofetch mpv man-db make lolcat ipv gcc fzf dunst cgra cmatrix curl bluez-utils bluez blueman bat alacritty 1password
+paru -S 1password alacritty bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger tldr tar unzip z zsh zip
+```
+
+---
+
+### Configure oh-my-zsh
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+* [oh-my-zsh](https://ohmyz.sh/)
+
+---
+
+### Configuring Neovim
+
+#### Install Neovim Nightly Release
+
+```sh
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+chmod u+x nvim.appimage && ./nvim.appimage
+sudo mv nvim.appimage /usr/bin/ 
+```
+
+If system does not have FUSE
+```sh
+./nvim.appimage --appimage-extract
+./squashfs-root/usr/bin/nvim
+```
+
+#### Neovim Config
+* [kickstart github](https://github.com/nvim-lua/kickstart.nvim)
+* [my kickstart fork](https://github.com/jacobneff/nvim) (clone this)
+```sh
+git clone https://github.com/jacobneff/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 ---
@@ -25,26 +60,35 @@ paru -S zsh zip unzip z tldr tar ranger python neovim neofetch mpv man-db make l
 * [How to install fonts video](https://www.youtube.com/watch?v=1RtLyPzbttA)
 ```sh
 mkdir -p ~/.local/share/fonts
+curl <url-to-font>
+unzip <font>
+mv <font> ~/.local/share/fonts
 fc-cache -fv # force clear the cache
-fc-list : family | grep "<font-name>" # list fonts family
-fc-list : family style | grep "<font-name>" # list fonts family and style
-fc-list : file | grep "<font-name>" # list fonts file path
 ```
 
-###### Installing Special Fonts
+##### Installing Special Fonts
 ```sh
 paru -S noto-fonts # google fonts
 paru -S nerd-fonts # nerd fonts 40 for JetBrainsMono Nerd Font
 ```
 
-###### Changing Default Font
+##### Changing Default Font
 ```sh
 sudo nvim /etc/fonts/local.conf
 ```  
 
-Font Previewer  
+#### View Fonts
+
 ```sh
-paru -S imagemagick # font previewer
+fc-list : family | grep "<font-name>" # list fonts family
+fc-list : family style | grep "<font-name>" # list fonts family and style
+fc-list : file | grep "<font-name>" # list fonts file path
+```
+
+##### Font Previewer  
+```sh
+# Add dependencies: sxiv, imagemagick, xdotool, fzf
+paru -S sxiv imagemagick xdotool
 paru -S fontpreview # better font previewer
 ```
 * [fontpreview github](https://github.com/sdushantha/fontpreview)
