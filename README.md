@@ -1,10 +1,9 @@
 # archinstall
 
-
-**Shell**: zsh
-**Window Manager**: Sway
-**Terminal**: Alacritty
-**Terminal Font**: JetBrainsMonoNerdFont
+**Shell**: zsh  
+**Window Manager**: Sway  
+**Terminal**: Alacritty  
+**Terminal Font**: JetBrainsMonoNerdFont  
 
 #### Initial Packages:
 ```sh
