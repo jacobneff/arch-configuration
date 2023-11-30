@@ -5,15 +5,21 @@
 **Terminal**: Alacritty  
 **Terminal Font**: JetBrainsMonoNerdFont  
 
-#### Initial Packages:
-```sh
-sudo pacman -S zsh zip unzip z tldr tar python neovim neofetch mpv man-db make lolcat ipv gcc fzf dunst cgra cmatrix curl bluez-utils bluez blueman bat alacritty 1password
+#### Installing paru
+```zsh
+sudo pacman -S --needed base-devel git # includes tools for building
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si # builds and installs paru
+paru # adds -Syu plags and updates the system
 ```
 
-#### Installing yay
+#### Install Initial Packages:
 ```sh
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-sudo pacman -S base-devel
-makepkg -si
+paru -S zsh zip unzip z tldr tar python neovim neofetch mpv man-db make lolcat ipv gcc fzf dunst cgra cmatrix curl bluez-utils bluez blueman bat alacritty 1password
+```
+
+##### How to change brightness
+```sh
+man brightnessctl
 ```
