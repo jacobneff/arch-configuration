@@ -138,7 +138,7 @@ WantedBy=multi-user.target
 ```
 
 ##### Enable Service
-* `sudo systemctl enable powertop`
+* `sudo systemctl enable powertop.service`
 
 ---
 
