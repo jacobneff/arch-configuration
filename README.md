@@ -32,10 +32,10 @@ git clone https://github.com/jacobneff/nvim.git "${XDG_CONFIG_HOME:-$HOME/.confi
 * [How to install fonts video](https://www.youtube.com/watch?v=1RtLyPzbttA)
 ```sh
 mkdir -p ~/.local/share/fonts
+curl <url-to-font>
+unzip <font>
+mv <font> ~/.local/share/fonts
 fc-cache -fv # force clear the cache
-fc-list : family | grep "<font-name>" # list fonts family
-fc-list : family style | grep "<font-name>" # list fonts family and style
-fc-list : file | grep "<font-name>" # list fonts file path
 ```
 
 ##### Installing Special Fonts
@@ -48,6 +48,14 @@ paru -S nerd-fonts # nerd fonts 40 for JetBrainsMono Nerd Font
 ```sh
 sudo nvim /etc/fonts/local.conf
 ```  
+
+#### View Fonts
+
+```sh
+fc-list : family | grep "<font-name>" # list fonts family
+fc-list : family style | grep "<font-name>" # list fonts family and style
+fc-list : file | grep "<font-name>" # list fonts file path
+```
 
 ##### Font Previewer  
 ```sh
