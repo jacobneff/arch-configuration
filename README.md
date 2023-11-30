@@ -18,7 +18,7 @@ paru # adds -Syu plags and updates the system
 
 #### Install Packages:
 ```sh
-paru -S 1password alacritty bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger tldr tar unzip z zsh zip
+paru -S 1password alacritty bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv logiops lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger solaar tldr tar unzip usbutils z zsh zip
 ```
 
 ---
@@ -38,10 +38,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```sh
 wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage && ./nvim.appimage
-mv nvim.appimage nvim && sudo mv nvim.appimage /usr/bin/
+mv nvim.appimage nvim && sudo mv nvim /usr/bin/
 ```
 
-If system does not have FUSE
+##### If system does not have FUSE
 ```sh
 ./nvim.appimage --appimage-extract
 ./squashfs-root/usr/bin/nvim
