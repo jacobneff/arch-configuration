@@ -108,6 +108,15 @@ paru -S fontpreview # better font previewer
 paru -S sddm-theme-tokyo-night
 ```
 
+##### Edit the sddm config file
+```sh
+sudo nvim /etc/sddm.conf  # use any text editor with raised privileges
+```
+```
+[Theme]
+Current=tokyo-night-sddm
+```
+
 * [theme repo](https://github.com/rototrash/tokyo-night-sddm)
 
 ---
