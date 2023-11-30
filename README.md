@@ -5,6 +5,8 @@
 **Terminal**: Alacritty  
 **Terminal Font**: JetBrainsMonoNerdFont  
 
+---
+
 ### Installing paru
 ```sh
 sudo pacman -S --needed base-devel git # includes tools for building
