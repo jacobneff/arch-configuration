@@ -40,6 +40,12 @@ wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage && ./nvim.appimage
 ```
 
+If system does not have FUSE
+```sh
+./nvim.appimage --appimage-extract
+./squashfs-root/usr/bin/nvim
+```
+
 #### Neovim Config
 * [kickstart github](https://github.com/nvim-lua/kickstart.nvim)
 * [my kickstart fork](https://github.com/jacobneff/nvim) (clone this)
