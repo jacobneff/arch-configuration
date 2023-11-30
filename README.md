@@ -121,7 +121,28 @@ Current=tokyo-night-sddm
 
 ---
 
-### Background Config
+### Power Management
+* `sudo nvim /etc/systemd/system/powertop.service`
+
+```sh
+[Unit]
+Description=Powertop tunings
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/powertop --auto-tune
+
+[Install]
+WantedBy=multi-user.target
+```
+
+##### Enable Service
+* `sudo systemctl enable powertop`
+
+---
+
+### Wallpaper Config
 
 * using `azote` and running it inside sway wm: `exec ~/.azotebg`
 * ru `azote` in terminal to pick the wallpaper
