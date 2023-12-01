@@ -1,4 +1,4 @@
-# archinstall
+# Arch Configuration
 
 **Shell**: zsh  
 **Window Manager**: Sway  
