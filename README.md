@@ -1,4 +1,4 @@
-# archinstall
+# Arch Configuration
 
 **Shell**: zsh  
 **Window Manager**: Sway  
@@ -18,7 +18,7 @@ paru # adds -Syu plags and updates the system
 
 #### Install Packages:
 ```sh
-paru -S 1password alacritty bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv logiops lolcat make man mpv microsoft-edge-stable neofetch python ripgrep ranger solaar tldr tar unzip usbutils z zsh zip
+paru -S 1password alacritty azote bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv libinput logiops lolcat make man mpv microsoft-edge-stable neofetch powertop python ripgrep ranger solaar tldr tar unzip usbutils z zsh zip
 ```
 
 ---
@@ -95,7 +95,64 @@ paru -S fontpreview # better font previewer
 
 ---
 
-##### How to change brightness
+### Logitech Mousee Configuration
+
+* `logid` (onfiguration with a file)
+* `solaar` (configuration with a gui)
+
+---
+
+### sddm Theme
+
+```sh
+paru -S sddm-theme-tokyo-night
+```
+
+##### Edit the sddm config file
+
+* `sudo nvim /etc/sddm.conf`
+
+```
+[Theme]
+Current=tokyo-night-sddm
+```
+
+* [theme repo](https://github.com/rototrash/tokyo-night-sddm)
+
+---
+
+### Power Management
+* `sudo nvim /etc/systemd/system/powertop.service`
+
+```sh
+[Unit]
+Description=Powertop tunings
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/powertop --auto-tune
+
+[Install]
+WantedBy=multi-user.target
+```
+
+##### Enable Service
+* `sudo systemctl enable powertop.service`
+
+##### Calibrate Powertop
+* `sudo powertop --calibrate`
+
+---
+
+### Wallpaper Config
+
+* using `azote` and running it inside sway wm: `exec ~/.azotebg`
+* run `azote` in terminal to pick the wallpaper
+
+---
+
+### Change brightness
 ```sh
 man brightnessctl
 ```
