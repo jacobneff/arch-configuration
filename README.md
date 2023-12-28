@@ -47,6 +47,29 @@ mv nvim.appimage nvim && sudo mv nvim /usr/bin/
 ./squashfs-root/usr/bin/nvim
 ```
 
+#### Build Neovim From Source
+
+```sh
+# install dependencies
+sudo pacman -S base-devel cmake unzip ninja tree-sitter curl
+```
+
+```sh
+git clone https://github.com/neovim/neovim.git
+```
+
+```sh
+cd neovim
+```
+
+```sh
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+```
+
+```sh
+sudo make install
+```
+
 #### Neovim Config
 * [kickstart github](https://github.com/nvim-lua/kickstart.nvim)
 * [my kickstart fork](https://github.com/jacobneff/nvim) (clone this)
