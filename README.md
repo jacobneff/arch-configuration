@@ -18,7 +18,7 @@ paru # adds -Syu plags and updates the system
 
 #### Install Packages:
 ```sh
-paru -S 1password alacritty azote bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv libinput logiops lolcat make man mpv microsoft-edge-stable neofetch powertop python ripgrep ranger solaar tldr tar unzip usbutils z zsh zip
+paru -S 1password alacritty azote bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv libinput logiops lolcat make man mpv microsoft-edge-stable neofetch powertop python ripgrep ranger solaar spotify-tui spotifyd tldr tar unzip usbutils z zellij zsh zip
 ```
 
 ---
@@ -45,6 +45,29 @@ mv nvim.appimage nvim && sudo mv nvim /usr/bin/
 ```sh
 ./nvim.appimage --appimage-extract
 ./squashfs-root/usr/bin/nvim
+```
+
+#### Build Neovim From Source
+
+```sh
+# install dependencies
+sudo pacman -S base-devel cmake unzip ninja tree-sitter curl
+```
+
+```sh
+git clone https://github.com/neovim/neovim.git
+```
+
+```sh
+cd neovim
+```
+
+```sh
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+```
+
+```sh
+sudo make install
 ```
 
 #### Neovim Config
