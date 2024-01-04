@@ -118,7 +118,20 @@ paru -S fontpreview # better font previewer
 
 ---
 
-### Logitech Mousee Configuration
+### Fixing Bluetooth in Dual Boot
+
+* (AUR)[https://wiki.archlinux.org/title/bluetooth#Dual_boot_pairing]
+* (BT-dualboot repo)[https://github.com/x2es/bt-dualboot]
+
+```sh
+paru -S python3
+paru -S python-pip
+sudo pip install bt-dualboot
+```
+
+---
+
+### Logitech Mouse Configuration
 
 * `logid` (onfiguration with a file)
 * `solaar` (configuration with a gui)
