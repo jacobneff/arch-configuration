@@ -1,7 +1,7 @@
 # Arch Configuration
 
 **Shell**: zsh  
-**Window Manager**: Sway  
+**Window Manager**: Hyprland
 **Terminal**: Alacritty  
 **Terminal Font**: JetBrainsMonoNerdFont  
 
