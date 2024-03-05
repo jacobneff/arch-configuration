@@ -18,7 +18,7 @@ paru # adds -Syu plags and updates the system
 
 #### Install Packages:
 ```sh
-paru -S 1password alacritty azote bat blueman bluez bluez-utils curl cmake cmatrix dunst fuse fzf gcc ipv libinput logiops lolcat make man mpv microsoft-edge-stable neofetch powertop python ripgrep ranger solaar spotify-tui spotifyd tldr tar unzip usbutils z zellij zsh zip
+paru -S 1password alacritty appimagelauncher azote base-devel bat blueman bluez bluez-utils brightnessctl curl cmake cmatrix discord dunst eza ffmpeg firefox fuse fzf gcc grim hyprlang i2c-tools imagemagick ipv iwd libinput logiops lolcat make man mosh mpv microsoft-edge-stable neofetch neovide obsidian otf-font-awesome pavucontrol powertop python qt5-wayland qt5ct qt6-wayland qt6ct ranger ripgrep rofi-lbonn-wayland-git sddm sddm-theme-tokyo-night solaar spotify-tui spotifyd swayidle swaylock syncthing tar thunar tldr tree-sitter unzip usbutils wl-clipboard wlroots wl-gammactl yazi zoxide zellij zsh zip
 ```
 
 ---
