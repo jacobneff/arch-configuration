@@ -18,7 +18,7 @@ paru # adds -Syu plags and updates the system
 
 #### Install Packages:
 ```sh
-paru -S 1password alacritty appimagelauncher azote base-devel bat blueman bluez bluez-utils brightnessctl curl cmake cmatrix discord dunst eza ffmpeg firefox fuse fzf gcc grim hyprlang i2c-tools imagemagick ipv iwd libinput logiops lolcat make man mosh mpv microsoft-edge-stable neofetch neovide nerd-fonts noto-fonts obsidian otf-font-awesome pavucontrol powertop python qt5-wayland qt5ct qt6-wayland qt6ct ranger ripgrep rofi-lbonn-wayland-git sddm sddm-theme-tokyo-night solaar spotify-tui spotifyd swayidle swaylock syncthing tar thunar tldr tree-sitter unzip usbutils wl-clipboard wlroots wl-gammactl yazi zoxide zellij zsh zip
+paru -S 1password alacritty appimagelauncher azote base-devel bat blueman bluez bluez-utils brightnessctl curl cmake cmatrix discord dunst eza ffmpeg firefox fuse fzf gcc grim hyprlang i2c-tools imagemagick ipv iwd libinput logiops lolcat make man mosh mpv microsoft-edge-stable neofetch neovide nerd-fonts noto-fonts obsidian otf-font-awesome pavucontrol powertop python qt5-wayland qt5ct qt6-wayland qt6ct ranger ripgrep rofi-lbonn-wayland-git sddm sddm-theme-tokyo-night solaar spotify-tui spotifyd starship swayidle swaylock syncthing tar thunar tldr tree-sitter unzip usbutils wl-clipboard wlroots wl-gammactl yazi zoxide zellij zsh zip
 ```
 
 ---
@@ -28,10 +28,6 @@ paru -S 1password alacritty appimagelauncher azote base-devel bat blueman bluez 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 * [oh-my-zsh](https://ohmyz.sh/)
-* starship prompt
-  ```sh
-  curl -sS https://starship.rs/install.sh | sh
-  ```
 * syntax highlighting
   ```sh
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
