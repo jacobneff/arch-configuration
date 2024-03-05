@@ -28,6 +28,10 @@ paru -S 1password alacritty appimagelauncher azote base-devel bat blueman bluez 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 * [oh-my-zsh](https://ohmyz.sh/)
+* starship prompt
+  ```sh
+  curl -sS https://starship.rs/install.sh | sh
+  ```
 
 ---
 
