@@ -45,20 +45,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ### Configuring Neovim
 
-#### Install Neovim Nightly Release
-
-```sh
-wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
-chmod u+x nvim.appimage && ./nvim.appimage
-mv nvim.appimage nvim && sudo mv nvim /usr/bin/
-```
-
-##### If system does not have FUSE
-```sh
-./nvim.appimage --appimage-extract
-./squashfs-root/usr/bin/nvim
-```
-
 #### Build Neovim From Source
 
 ```sh
@@ -80,6 +66,20 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo
 
 ```sh
 sudo make install
+```
+
+#### Install Neovim Nightly Release
+
+```sh
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+chmod u+x nvim.appimage && ./nvim.appimage
+mv nvim.appimage nvim && sudo mv nvim /usr/bin/
+```
+
+##### If system does not have FUSE
+```sh
+./nvim.appimage --appimage-extract
+./squashfs-root/usr/bin/nvim
 ```
 
 #### Neovim Config
