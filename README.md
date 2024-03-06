@@ -148,6 +148,8 @@ paru -S sddm-theme-tokyo-night
 Current=tokyo-night-sddm
 ```
 
+* `sudo systemctl enable sddm` and `sudo systemctl start sddm`
+
 * [theme repo](https://github.com/rototrash/tokyo-night-sddm)
 
 ---
