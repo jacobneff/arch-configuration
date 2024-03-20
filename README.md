@@ -185,6 +185,12 @@ WantedBy=multi-user.target
 
 ---
 
+### Remote Drive with OneDrive
+
+* (How to Guide with rclone)[https://kb.uconn.edu/space/IKB/26050527301/Setting+up+OneDrive+on+Linux]
+
+---
+
 ### Change brightness
 ```sh
 man brightnessctl
