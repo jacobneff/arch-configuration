@@ -196,6 +196,8 @@ WantedBy=multi-user.target
 man brightnessctl
 ```
 
+---
+
 ### Bluetooth on startup
 
 * [Fix in the `/etc/bluetooth/main.conf`](https://unix.stackexchange.com/questions/197212/turn-on-bluetooth-on-login-screen)
